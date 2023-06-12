@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JO NorOff 2023- Portifolio</title>
+    <link rel="stylesheet" href="src/css/aboutproject.css" />
+    <link rel="shortcut icon" href="/img/computerdesign.svg" />
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Icons CDN-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+
+    <!--FLAGS icon CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html" class="nav_logo">
+          <img src="img/LOGO1.png" width="100px" alt="" />
+        </a>
+
+        <ul class="nav_menu">
+          <li><a href="index.html">HJEM</a></li>
+       
+          <li><a href="#contact">KONTAKT OSS</a></li>
+          <li>
+            <a href="./img/CV.pdf" class="btn btn-primary" download
+              ><i class="uil uil-download-alt"></i> Last Ned CV</a
+            >
+          </li>
+        </ul>
+
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+
+    <!--ABOUT THE PROJECT -->
+    <header>
+      <section class="about">
+        <a href="index.html"><i class="uil uil-arrow-left"></i></a>
+        <div class="container">
+          <h1><i class="fa-solid fa-brain"></i>Think</h1>
+          <h5>Teknologi Nyheter, Blog</h5>
+          <div class="portfolio_cta">
+            <a
+              href="https://github.com/joroinnoroff/communitysciencemuseumjorgenNOROFF"
+              class="btn"
+              target="_blank"
+              >Github<i class="uil uil-github"></i
+            ></a>
+            <a
+              href="https://famous-dolphin-71c477.netlify.app/"
+              class="btn btn-primary"
+              target="_blank"
+              >Live versjon<i class="uil uil-browser"></i
+            ></a>
+          </div>
+          <hr />
+
+          <h2>
+            Denne Nettsiden er Bygget med WordPress Rest API. Her er
+            Informasjonen til Artikkelene Lagret hos Wordpress som vanlig A4 ark
+            med informasjon
+          </h2>
+
+          <h4>
+            Og så ved hjelp av Javascript Fetch hentes dette Innholdet og blir
+            lagt ut på den ønsket måten
+          </h4>
+
+          <span class="portfolio_project-image"
+            ><img src="./img/portifolio3.png"
+          /></span>
+          <hr />
+          <h4>
+            Fokuset i Denne oppgaven var å lage en nettside som enkelt kan
+            vedlikeholdes av eier uten ekstra koding. Her Kan man enkelt endre
+            Informasjonen som ligger i Wordpress.
+          </h4>
+          <span class="portfolio_project-image"
+            ><img src="./img/articlesfetched.png"
+          /></span>
+          <hr />
+          <span class="portfolio_project-image"
+            ><img src="./img/articlefetched.png"
+          /></span>
+          <h5>Slik Ser informasjonen ut hos WordPress og slik kommer det ut på Nettsiden:</h5>
+          <span class="portfolio_project-image"
+          ><img src="./img/brainthinkarticle.png"
+        /></span>
+
+       
+      </section>
+    </header>
+
+    <!--Contact section-->
+    <section id="contact">
+      <div class="container contact_container">
+        <div class="contact_left">
+          <h2>Ta kontakt med oss her</h2>
+          <p>Vi skreddesyr din nettside etter dine ønsker og behov</p>
+          <ul class="contact_socials">
+            <li>
+              <a href="https://www.instagram.com/jorgenoino/" target="_blank"
+                ><i class="uil uil-instagram contact_socialsi"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/joroinnoroff/" target="_blank"
+                ><i class="uil uil-github contact_socialsi"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://adobe.com" target="_blank"
+                ><i class="uil uil-adobe contact_socialsi"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <form id="js-form" action="" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Ditt navn"
+            required
+            id="js-name"
+          />
+          <input
+            type="mail"
+            name="email"
+            placeholder="Din Epost"
+            required
+            id="js-email"
+          />
+          <input
+            type="text"
+            name="company"
+            placeholder="Navn på selskap"
+            required
+          />
+          <p>
+            Hvis du har en ferdig brief eller andre relevante dokumenter, kan du
+            laste dem opp her
+          </p>
+          <input
+            id="kontakt-Clientfiles--1438282865"
+            multiple=""
+            name="d419fdcd"
+            type="file"
+          />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="6"
+            placeholder="Skriv dine ønsker her"
+            required
+            ></textarea>
+            <p id="js-success-message"></p>
+          <button type="submit" class="btn send-btn">
+            send melding<i class="uil uil-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+  
+      <small> Jørgen Øino 2023 &copy; </small>
+    </footer>
+    <script>
+     const nameInput = document.getElementById("js-name");
+      const emailInput = document.getElementById("js-email");
+      const form = document.getElementById("js-form");
+      const successMessage = document.getElementById("js-success-message");
+
+      const nameRegex = /^[a-zA-Z]{2,}$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const nameValue = nameInput.value.trim();
+        const emailValue = emailInput.value.trim();
+
+        if (!nameRegex.test(nameValue)) {
+          nameInput.classList.add("invalid");
+        } else {
+          nameInput.classList.remove("invalid");
+        }
+
+        if (!emailRegex.test(emailValue)) {
+          emailInput.classList.add("invalid");
+          successMessage.textContent = "Feil med Epost";
+        } else {
+          emailInput.classList.remove("invalid");
+          successMessage.textContent =
+            "Takk for at du kontakter oss! vi svarer så rask som mulig på oppgitt Epost. ";
+          form.reset();
+        }
+
+        successMessage.style.display = "block";
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>

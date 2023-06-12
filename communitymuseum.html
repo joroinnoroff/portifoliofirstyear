@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SamfunnsMuseum Prosjekt - JO NorOff 2023- Portifolio</title>
+    <link rel="stylesheet" href="src/css/aboutproject.css" />
+    <link rel="shortcut icon" href="/img/computerdesign.svg" />
+    <!--Box icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!--Icons CDN-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
+    />
+
+    <!--FLAGS icon CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"
+    />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/handlebars/4.7.7/handlebars.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav_container">
+        <a href="index.html" class="nav_logo">
+          <img src="img/LOGO1.png" width="100px" alt="" />
+        </a>
+
+        <ul class="nav_menu">
+          <li><a href="index.html">HJEM</a></li>
+
+          <li><a href="#contact">KONTAKT OSS</a></li>
+          <li>
+            <a href="./img/CV.pdf" class="btn btn-primary" download
+              ><i class="uil uil-download-alt"></i> Last Ned CV</a
+            >
+          </li>
+        </ul>
+
+        <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+        <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+      </div>
+    </nav>
+
+    <!--ABOUT THE PROJECT -->
+    <header>
+      <section class="about">
+        <a href="index.html"><i class="uil uil-arrow-left"></i></a>
+        <div class="container">
+          <h1>Community Science Museum<i class="bx bx-atom"></i></h1>
+          <div class="portfolio_cta">
+            <a
+              href="https://github.com/joroinnoroff/communitysciencemuseumjorgenNOROFF"
+              class="btn"
+              target="_blank"
+              >Github<i class="uil uil-github"></i
+            ></a>
+            <a
+              href="https://famous-dolphin-71c477.netlify.app/"
+              class="btn btn-primary"
+              target="_blank"
+              >Live versjon<i class="uil uil-browser"></i
+            ></a>
+          </div>
+          <hr />
+
+          <h2>
+            “Explore together” Come join us at the Community Science Museum
+            where we’re committed to making science accessible to all.
+          </h2>
+
+          <h4>
+            Med dette i Tankene har vi Utstillinger Øverst på siden, i
+            Navigasjon er det første man kan trykke på Besøk og under står
+            Slagordet:
+          </h4>
+          <h5></h5>
+          <span class="portfolio_project-image"
+            ><img src="./img/portfolio1.png"
+          /></span>
+          <hr />
+          <h4>
+            Utstillingene ligger utlagt med bilder og tekst, hvor man kan holde
+            over bilde for mer Informasjon
+          </h4>
+
+          <div class="example-wrapper">
+            <!--carousel link = https://codepen.io/Oral_Seventhplanet/pen/Bazxpdq-->
+            <div class="example-code">
+              <!--carousel link = https://codepen.io/Oral_Seventhplanet/pen/Bazxpdq-->
+
+              <div class="box">
+                <div class="imgBx">
+                  <img src="/img/evo.jpg" alt="evolution" srcset="" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 id="evo">Evolution</h2>
+                    <p>
+                      For centuries, philosophers and scientists have wrestled
+                      with the question of our origins. Where do we come from
+                      and how did we get here? Since Darwin proposed his theory
+                      of evolution we have had a framework for exploring and
+                      understanding our place in this world. Come se our
+                      evolution exhibition.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imgBx">
+                  <img src="/img/cosmo.jpg" alt="Cosmology" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 class="cos">Cosmology</h2>
+                    <p>
+                      Our fantastic exhibition, ‘The Sky Above Us’, explores the
+                      night sky and what we can see and know about the universe
+                      around us. We’ll locate the various constellations and
+                      galaxies that can be seen and learn a bit about the early
+                      navigators who used the stars to travel by.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imgBx">
+                  <img src="/img/biomed.jpg" alt="biology & medicine" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 id="bio">Biology & medicine</h2>
+                    <p>
+                      Major breakthroughs in biology are offering us unique
+                      insights into the great wonders of the tiny world. For
+                      many people their life expectancy is much longer and their
+                      quality of life much improved, thanks to the growth of our
+                      understanding of medicine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imgBx">
+                  <img src="/img/robai.jpg" alt="robotics & ai" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 id="rob">Robotics & AI</h2>
+                    <!--https://aibusiness.com/verticals/robotics-and-artificial-intelligence-the-role-of-ai-in-robots-->
+                    <p>
+                      Robotics and artificial intelligence are two very
+                      different disciplines. While you can have robots with
+                      artificial intelligence, it’s equally possible for
+                      robotics to flourish without AI. From useful home
+                      applications of AI to industrial uses of robotics, the
+                      future is here. Learn more at our Robotics & ai section.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="imgBx">
+                  <img src="/img/eco.jpg" alt="ecology" />
+                </div>
+                <div class="content">
+                  <div>
+                    <h2 id="eco">Ecology</h2>
+                    <p>
+                      As we learn more and more of the impact humans are having
+                      on the planet, the more important it becomes that
+                      scientists explore how to create a sustainable future not
+                      just for humans but for the whole planet. Learn more about
+                      it and how we can help at our Ecology exhbit
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h2>
+            Under Besøk finner Man enkelt oversikten til åpningstider, Diverse
+            Priser og hvordan man kan Booke visning.
+          </h2>
+
+          <div class="ohours">
+            <h2>Opening hours</h2>
+            <ul class="openclosed">
+              <li class="days">Tuesday - Wednesday - thursday 10:00 - 16:00</li>
+              <li class="days">Friday 10:00 - 19:00</li>
+              <li class="days">Saturday 09:00 - 16:00</li>
+              <li class="days">Sunday 09:00 - 13:00</li>
+              <li class="days">Monday - closed</li>
+            </ul>
+
+            <div class="admission">
+              <div class="ad">
+                <h2>All Exhibitions are free</h2>
+                <h3>
+                  Guided tours every hour, book here now or pay at the enterance
+                </h3>
+                <ul class="price">
+                  <li>70kr For people 18 or older</li>
+                  <li>50kr For students</li>
+                  <h3>For teachers and schooltrips</h3>
+                  <li>0kr</li>
+                  <div class="text-holder">
+                    <p>
+                      As a community-driven museum, we want to work with schools
+                      to create places of learning and exploring. Our team are
+                      on hand to give your students guided tours of the museum,
+                      teach them in our learning laboratory, and provide great
+                      video presentations that will excite and inspire them.
+                    </p>
+                  </div>
+                </ul>
+                <a href="#" class="book">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!--Contact section-->
+    <section id="contact">
+      <div class="container contact_container">
+        <div class="contact_left">
+          <h2>Ta kontakt med oss her</h2>
+          <p>Vi skreddesyr din nettside etter dine ønsker og behov</p>
+          <ul class="contact_socials">
+            <li>
+              <a href="https://www.instagram.com/jorgenoino/" target="_blank"
+                ><i class="uil uil-instagram contact_socialsi"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/joroinnoroff/" target="_blank"
+                ><i class="uil uil-github contact_socialsi"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://adobe.com" target="_blank"
+                ><i class="uil uil-adobe contact_socialsi"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <form id="js-form" action="" method="POST">
+          <input
+            type="text"
+            name="name"
+            placeholder="Ditt navn"
+            required
+            id="js-name"
+          />
+          <input
+            type="mail"
+            name="email"
+            placeholder="Din Epost"
+            required
+            id="js-email"
+          />
+          <input
+            type="text"
+            name="company"
+            placeholder="Navn på selskap"
+            required
+          />
+          <p>
+            Hvis du har en ferdig brief eller andre relevante dokumenter, kan du
+            laste dem opp her
+          </p>
+          <input
+            id="kontakt-Clientfiles--1438282865"
+            multiple=""
+            name="d419fdcd"
+            type="file"
+          />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="6"
+            placeholder="Skriv dine ønsker her"
+            required
+          ></textarea>
+          <p id="js-success-message"></p>
+          <button type="submit" class="btn send-btn">
+            send melding<i class="uil uil-arrow-right"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <small> Jørgen Øino 2023 &copy; </small>
+    </footer>
+    <script>
+      const nameInput = document.getElementById("js-name");
+      const emailInput = document.getElementById("js-email");
+      const form = document.getElementById("js-form");
+      const successMessage = document.getElementById("js-success-message");
+
+      const nameRegex = /^[a-zA-Z]{2,}$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const nameValue = nameInput.value.trim();
+        const emailValue = emailInput.value.trim();
+
+        if (!nameRegex.test(nameValue)) {
+          nameInput.classList.add("invalid");
+        } else {
+          nameInput.classList.remove("invalid");
+        }
+
+        if (!emailRegex.test(emailValue)) {
+          emailInput.classList.add("invalid");
+          successMessage.textContent = "Feil med Epost";
+        } else {
+          emailInput.classList.remove("invalid");
+          successMessage.textContent =
+            "Takk for at du kontakter oss! vi svarer så rask som mulig på oppgitt Epost. ";
+          form.reset();
+        }
+
+        successMessage.style.display = "block";
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
