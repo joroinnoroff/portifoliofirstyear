@@ -145,6 +145,7 @@ section{
   cursor: pointer;
   transition: 400ms;
   text-align: center;
+  border-radius: 5px;
 }
 .btn:hover{
   background-color: var(--color-light);
@@ -428,6 +429,10 @@ header{
   width: 49%;
 }
 
+.mt-5 {
+  padding: 1rem;
+}
+
 .portfolio_head a{
   margin-top: 1.4rem;
   display: inline-block;
@@ -686,7 +691,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5px solid;
+     
   }
  
 

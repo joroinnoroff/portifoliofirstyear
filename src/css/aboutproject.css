@@ -66,7 +66,7 @@ h5{
 
 img{
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 #rdlogo{
   max-width: 700px;
@@ -275,7 +275,7 @@ header{
 
 .portfolio_project-image img{
   transform: 0;
-  transition: 30s;
+  transition: 50s;
 }
 
 .portfolio_cta{
@@ -303,6 +303,23 @@ hr{
   padding: 1rem;
   background-color: #000;
   border-radius: 10px;
+}
+
+.video-container{
+  width: 320px;
+  height: 185px;
+ 
+}
+.video-wrapper{
+  width: 328px;
+  height: auto;
+  
+ 
+}
+video{
+  width: 321px;
+    height: auto;
+    
 }
 .desktop{
   text-align: center;
@@ -440,15 +457,19 @@ hr{
 }
 .right img{
   height: 650px;
-  width: 400px;
+  width: 487px;
 }
 @media screen and (max-width:1400px) {
   .col{
     flex-direction: column;
   }
   .right img{
-    height: 505px;
-    width: 330px;
+    height: 478px;
+    width: 356px;
+  }
+  #specific-image {
+    width: 219px;
+    height: auto; /* Maintain aspect ratio */
   }
   #contact{
     margin-top: 180rem;
